@@ -4,7 +4,7 @@ node {
     stage('Clone repository') {
         /* Let's make sure we have the repository cloned to our workspace */
 
-        git clone https://github.com/nandan2310/hellonode.git
+      checkout scm
     }
 
     stage('Build image') {
